@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="hue.com.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="My Restaurant"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon">
+        <activity android:name=".activityuser.Update_inforUSActivity"></activity>
+        <activity android:name=".Fragment.Update_inforUSActivity" />
+        <activity android:name=".activityadmin.Showinfor_UsadActivity" />
+        <activity android:name=".activityuser.BillUserActivity" />
+        <activity android:name=".activityadmin.UpdateRulerActivity" />
+        <activity android:name=".activityuser.GioiThieuActivity" />
+        <activity android:name=".activityuser.DoiMK_Activity" />
+
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activityadmin.ShowbillDetailadActivity" />
+        <activity android:name=".activityuser.ShowBillDetailsActivity" />
+        <activity android:name=".activityuser.BillActivity" />
+        <activity android:name=".activityuser.ThanhToan_Activity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".activityuser.CartActivity" />
+        <activity android:name=".activityadmin.MonAnad1Activity" />
+
+        <activity android:name=".activityuser.ThongTin_MonAnActivity" />
+        <activity android:name=".activityuser.MonAnActivity" />
+        <activity android:name=".TrangChu2Activity" />
+        <activity android:name=".activityuser.UserActivity" />
+
+        <activity android:name=".activityuser.CategoryActivity" />
+        <activity android:name=".TrangChuActivity" />
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".service.ListenOrderService"
+            android:enabled="true"
+            android:exported="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+</manifest>

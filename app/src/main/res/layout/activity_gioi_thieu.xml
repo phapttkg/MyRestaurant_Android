@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F1F1F1"
+tools:context=".activityuser.GioiThieuActivity">
+<ImageView
+    android:id="@+id/nentren"
+    android:layout_width="match_parent"
+    android:layout_height="274dp"
+    android:layout_marginTop="-50dp"
+    android:src="@drawable/food"></ImageView>
+<ImageView
+    android:id="@+id/nentren1"
+    android:layout_width="match_parent"
+    android:layout_height="248dp"
+    android:layout_marginTop="-12dp"
+    android:src="@drawable/nentren"></ImageView>
+<ImageView
+    android:id="@+id/nenduoi"
+    android:layout_width="match_parent"
+    android:layout_height="531dp"
+    android:layout_marginTop="230dp"
+    android:src="@drawable/nen_duoi"></ImageView>
+
+<ImageView
+    android:id="@+id/about"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="150dp"
+    android:src="@drawable/about"></ImageView>
+
+<ImageView
+    android:id="@+id/vien"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-46dp"
+    android:layout_marginTop="-75dp"
+    android:contentDescription="TODO"
+    android:src="@drawable/logo"></ImageView>
+
+<ImageView
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:src="@drawable/back"></ImageView>
+
+    <ImageView
+        android:id="@+id/tv1"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/roboto"
+        android:src="@drawable/logo1"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Leader:            Nguyen Thi Hue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Member:          Trần Thế Pháp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Member:          Nguyễn Hoàng Du"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Member:          Nguyễn Hoàng Huy"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

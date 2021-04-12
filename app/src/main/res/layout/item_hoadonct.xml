@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgnen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nencart"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgnenxoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/nenxoa"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgxoact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/delete"></ImageView>
+
+        <ImageView
+            android:id="@+id/imagefoodct"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/food"></ImageView>
+
+        <TextView
+            android:id="@+id/tvTenMAct"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imagefoodct"
+            android:fontFamily="@font/roboto"
+            android:text="BÚN CHẢ"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+        <ImageView
+            android:id="@+id/imgnhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/nhan"
+            android:layout_toRightOf="@id/tvTenMAct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nenSL"
+            android:background="@drawable/tronsl"
+            android:layout_toRightOf="@id/imgnhan"
+            android:layout_marginTop="10dp"></ImageView>
+
+        <TextView
+            android:id="@+id/tvSLct"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgnhan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="2"></TextView>
+        <TextView
+            android:id="@+id/tvGiact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTenMAct"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imagefoodct"
+            android:text="1.000.000 VNĐ"
+            android:textColor="#F44336"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragmentadmin.PaidFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragmentadmin.UnpaidFragment">
+
+        <TextView
+            android:id="@+id/hoadondmad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="BILL"
+            android:fontFamily="@font/roboto"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtSearchmhdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search1"
+            android:hint="Mã Hóa Đơn"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="viewStart"
+            ></EditText>
+
+        <Button
+            android:id="@+id/btnsearchmhdp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search"></Button>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerbilladp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/hoadondmad"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="15dp"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</FrameLayout>

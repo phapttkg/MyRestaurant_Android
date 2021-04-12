@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "26230799060",
+    "firebase_url": "https://pr0112-duan1.firebaseio.com",
+    "project_id": "pr0112-duan1",
+    "storage_bucket": "pr0112-duan1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26230799060:android:24694424e74e743b17d941",
+        "android_client_info": {
+          "package_name": "hue.com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26230799060-7dvel6k3porm6b7vdp3q5ul2rnpei4rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOxIv4BAK1ONJmjgBM77Qnj8ghStAM-Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26230799060-7dvel6k3porm6b7vdp3q5ul2rnpei4rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

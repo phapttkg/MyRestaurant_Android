@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imgvienad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+    <ImageView
+        android:id="@+id/imgbackmaad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"></ImageView>
+
+    <TextView
+        android:id="@+id/tvLoaiMAad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:text="Món ăn"
+        android:fontFamily="@font/roboto"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <Button
+        android:id="@+id/btnthemmaad"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/them"></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclermaad"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvLoaiMAad">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

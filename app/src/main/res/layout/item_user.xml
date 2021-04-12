@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/cardview_us"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgnen"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/hoadonnen"></ImageView>
+        <ImageView
+            android:id="@+id/imageuser"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/icons8_user_80px"></ImageView>
+        <TextView
+            android:id="@+id/tvTenUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageuser"
+            android:textStyle="bold"
+            android:text="Tên Tài Khoản"
+            android:textColor="#8F8383"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/tvRuler"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageuser"
+            android:text="User"
+            android:layout_below="@id/tvTenUser"
+            android:textColor="#DD0000"
+            android:textSize="20dp"
+            ></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/vien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"></ImageView>
+
+    <TextView
+        android:id="@+id/LoaiMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:text="MENU"
+        android:fontFamily="@font/roboto"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/edtSearchlm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search1"
+        android:hint="Loại món ăn ..."
+        android:textAlignment="viewStart"
+        android:visibility="invisible"></EditText>
+
+    <Button
+        android:id="@+id/btnsearchlm"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search"></Button>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryclelma"
+        android:layout_below="@id/btnsearchlm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

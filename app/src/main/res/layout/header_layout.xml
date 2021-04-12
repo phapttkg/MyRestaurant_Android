@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="250dp"
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/h1"
+
+    >
+    <ImageView
+        android:id="@+id/hinh"
+        android:src="@drawable/hinhad"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtQuanlyct"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FF6D00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:textStyle="bold"
+        android:text="admin" />
+
+
+
+</RelativeLayout>

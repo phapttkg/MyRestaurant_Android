@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nenlogin"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/wel"></ImageView>
+    <ImageView
+        android:id="@+id/tron1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tron1"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="-20dp"
+        android:layout_alignParentRight="true"></ImageView>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/username"></EditText>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtEmail"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pass"></EditText>
+    <CheckBox
+        android:id="@+id/cbremember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPass"
+        android:layout_alignLeft="@+id/edtPass"
+        android:layout_marginTop="10dp"
+        android:text="Nhớ mật khẩu"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbremember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lgin"></Button>
+    <Button
+        android:id="@+id/btnSign"
+        android:background="@drawable/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"></Button>
+</RelativeLayout>

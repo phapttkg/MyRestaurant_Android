@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgfoodma"
+            android:layout_width="190dp"
+            android:scaleType="centerCrop"
+            android:layout_height="200dp"
+            android:src="@drawable/foodma"></ImageView>
+
+        <TextView
+            android:id="@+id/tvTenMA"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="BÚN CHẢ"
+            android:textAlignment="center"
+            android:textColor="#4B4343"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTenMA"
+            android:layout_marginTop="3dp"
+            android:text="1.000.000 VNĐ"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

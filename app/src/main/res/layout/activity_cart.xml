@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activityuser.CartActivity">
+
+    <ImageView
+        android:id="@+id/imgnen"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/nen2"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgbackc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"></ImageView>
+
+    <TextView
+        android:id="@+id/tvcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgnen"
+        android:layout_marginLeft="40dp"
+        android:text="CART"
+        android:fontFamily="@font/roboto"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclercart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvGiac"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tvcart">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvGiac"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnPayc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="0 VNĐ"
+        android:textColor="#F44336"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvTotalc"
+        android:layout_width="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnPayc"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Total:"
+        android:textSize="25dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/btnPayc"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pay"></Button>
+</RelativeLayout>

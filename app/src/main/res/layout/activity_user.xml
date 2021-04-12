@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activityuser.UserActivity">
+    <ImageView
+        android:id="@+id/nentren"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/food"></ImageView>
+
+    <ImageView
+        android:id="@+id/nentren1"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="-12dp"
+        android:src="@drawable/nentren"></ImageView>
+
+    <ImageView
+        android:id="@+id/nenduoi"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/nen_duoi"></ImageView>
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@color/white"
+        android:foreground="@drawable/icons8_user_80px"></ImageView>
+    <ImageView
+        android:id="@+id/vien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"></ImageView>
+
+    <TextView
+        android:id="@+id/tvTenTk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Tên tài khoản : "
+        />
+
+    <TextView
+        android:id="@+id/tvtenht"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTenTk"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvTenTk"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvSoDT"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtenht"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Số điện thoại : "
+        />
+
+    <TextView
+        android:id="@+id/tvsdtht"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSoDT"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvTenTk"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvGT"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsdtht"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Giới Tính : "
+        />
+
+    <TextView
+        android:id="@+id/tvgtht"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGT"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvTenTk"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCapNhat"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvgtht"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnupdate" />
+
+
+
+
+
+
+</RelativeLayout>

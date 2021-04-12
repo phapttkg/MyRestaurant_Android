@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#F1F1F1"
+tools:context=".fragmentadmin.UseradFragment">
+
+    <ImageView
+        android:id="@+id/vien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo3"></ImageView>
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logout"></ImageView>
+<TextView
+    android:id="@+id/txthddm"
+    android:text="Khách hàng"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:fontFamily="@font/roboto"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="120dp"
+    android:layout_marginLeft="30dp"
+    android:layout_height="wrap_content"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyus"
+    android:layout_marginBottom="50dp"
+    android:layout_below="@+id/vien"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</RelativeLayout>

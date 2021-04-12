@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activityadmin.ShowbillDetailadActivity">
+
+    <ImageView
+        android:id="@+id/imgvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+    <ImageButton
+        android:id="@+id/imgbackctsad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginTop="15dp"></ImageButton>
+
+    <TextView
+        android:id="@+id/txthdctsad"
+        android:text="Chi Tiết Đơn Hàng"
+        android:textSize="25dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/imgbackctsad"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recbad"
+        android:layout_below="@id/txthdctsad"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvGiasb"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="0 VNĐ"
+        android:textColor="#F44336"
+        android:layout_marginBottom="80dp"
+        android:textSize="25dp"
+       android:layout_alignParentBottom="true"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvTotalsb"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:text="Total:"
+        android:fontFamily="@font/roboto"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnhuybad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtGiaBanma"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cancel1"></Button>
+
+        <Button
+            android:id="@+id/btnttbad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtGiaBanma"
+            android:layout_toRightOf="@id/btnCancelma"
+            android:background="@drawable/ok1"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

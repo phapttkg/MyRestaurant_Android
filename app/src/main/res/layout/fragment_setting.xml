@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    >
+
+    <ImageView
+        android:id="@+id/nentren"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/food"></ImageView>
+
+    <ImageView
+        android:id="@+id/nentren1"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="-12dp"
+        android:src="@drawable/nentren"></ImageView>
+
+    <ImageView
+        android:id="@+id/nenduoi"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/nen_duoi"></ImageView>
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/setting1"></ImageView>
+
+    <ImageView
+        android:id="@+id/vien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo3"></ImageView>
+
+    <Button
+        android:id="@+id/btnthongtin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/box4"></Button>
+
+    <Button
+        android:id="@+id/btndoimk"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnthongtin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box3"></Button>
+
+    <Button
+        android:id="@+id/btnhoadon"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btndoimk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box2"></Button>
+
+    <Button
+        android:id="@+id/btnAbout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnhoadon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box1"></Button>
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAbout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box">
+    </Button>
+
+</RelativeLayout>

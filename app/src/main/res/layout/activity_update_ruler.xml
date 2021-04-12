@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F1F1F1"
+tools:context=".activityadmin.UpdateRulerActivity">
+<ImageView
+    android:id="@+id/vien"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-46dp"
+    android:layout_marginTop="-75dp"
+    android:contentDescription="TODO"
+    android:src="@drawable/logo"></ImageView>
+<ImageView
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/back"
+    android:layout_marginTop="15dp"></ImageView>
+
+<TextView
+    android:id="@+id/avatar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    android:fontFamily="@font/roboto"
+    android:text="UPDATE USER"
+    android:textSize="25dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/avatar"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:id="@+id/edtEmail"
+    android:background="@drawable/username"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:inputType="textPassword"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:id="@+id/edtPass"
+    android:layout_below="@id/edtEmail"
+    android:background="@drawable/pass"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:id="@+id/edtFullname"
+    android:layout_below="@id/edtPass"
+    android:background="@drawable/fullname"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:id="@+id/edtPhone"
+    android:layout_below="@id/edtFullname"
+    android:background="@drawable/phone"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/edtGender"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:layout_below="@id/edtPhone"
+    android:background="@drawable/gender"></TextView>
+<Spinner
+    android:id="@+id/spRuler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:background="@drawable/rule"
+    android:layout_below="@+id/edtGender"/>
+
+<Button
+    android:id="@+id/btnCancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spRuler"
+    android:layout_marginLeft="70dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/cancel1"></Button>
+
+<Button
+    android:id="@+id/btnOK"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spRuler"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toRightOf="@id/btnCancel"
+    android:background="@drawable/ok1"></Button>
+</RelativeLayout>

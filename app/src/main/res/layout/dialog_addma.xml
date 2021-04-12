@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imgvienma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+
+
+
+    <ImageView
+        android:id="@+id/imagefoodma"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#000"></ImageView>
+
+
+
+
+
+    <EditText
+        android:id="@+id/edtTenMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagefoodma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tenmonan"></EditText>
+
+    <EditText
+        android:id="@+id/edtGiaBanma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTenMA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/giaban"></EditText>
+
+
+    <LinearLayout
+        android:layout_below="@id/edtGiaBanma"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnCancelma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtGiaBanma"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cancel1"></Button>
+
+        <Button
+            android:id="@+id/btnOKma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtGiaBanma"
+
+            android:layout_toRightOf="@id/btnCancelma"
+            android:background="@drawable/ok1"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

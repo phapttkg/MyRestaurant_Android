@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F1F1F1"
+    android:fitsSystemWindows="true"
+    tools:context=".fragmentadmin.ThongkeadFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:scrollbarStyle="insideOverlay">
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-46dp"
+                android:layout_marginTop="-80dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/logo3"></ImageView>
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/logout"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="65dp"
+                android:text="Thống Kê"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginRight="20dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/doanhthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:text="Doanh thu"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <ImageView
+                android:id="@+id/nen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doanhthu"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/nenthongke"></ImageView>
+
+            <ImageView
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doanhthu"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/today"></ImageView>ư
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:text="1.000.000"
+                android:textColor="#F44336"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNgay"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:text="VNĐ"
+                android:textColor="#F44336"
+                android:textSize="20dp"></TextView>
+
+            <ImageView
+                android:id="@+id/nen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doanhthu"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nen"
+                android:src="@drawable/nenthongke"></ImageView>
+
+            <ImageView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doanhthu"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/nen"
+                android:src="@drawable/month"></ImageView>ư
+
+            <TextView
+                android:id="@+id/tvthang"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/nen"
+                android:text="1.000.000"
+                android:textColor="#F44336"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvthang"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/nen"
+                android:text="VNĐ"
+                android:textColor="#F44336"
+                android:textSize="20dp"></TextView>
+
+            <ImageView
+                android:id="@+id/nen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doanhthu"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nen1"
+                android:src="@drawable/nenthongke"></ImageView>
+
+            <ImageView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doanhthu"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/nen1"
+                android:src="@drawable/year"></ImageView>ư
+
+            <TextView
+                android:id="@+id/tvNam"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/nen1"
+                android:text="1.000.000"
+                android:textColor="#F44336"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNam"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/nen1"
+                android:text="VNĐ"
+                android:textColor="#F44336"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/thongkemonan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nen"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Món ăn bán chạy nhất"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclersale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thongkemonan"
+                android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/thongkehd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclersale"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Hóa đơn cao nhất"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyhd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thongkehd"
+                android:layout_marginTop="3dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/thongkeus"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Người Dùng"
+                android:fontFamily="@font/roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyhd"
+                android:layout_marginLeft="30dp"
+
+                ></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyuser"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/thongkeus"
+                android:layout_marginTop="3dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout></androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

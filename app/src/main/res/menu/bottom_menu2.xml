@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/itemma"
+        android:title="FOOD"
+        android:icon="@drawable/monan"
+        />
+
+    <item
+        android:id="@+id/itemlm"
+        android:title="MENU"
+        android:icon="@drawable/loaima"
+        />
+
+
+    <item
+        android:id="@+id/itemBill"
+        android:title="BILL"
+        android:icon="@drawable/hoadon"
+        />
+
+    <item
+        android:id="@+id/itemtk"
+        android:title="STATISTICAL"
+        android:icon="@drawable/thongke"
+        />
+
+    <item
+        android:id="@+id/khachhang"
+        android:title="USER"
+        android:icon="@drawable/khachhang"
+
+
+        />
+</menu>

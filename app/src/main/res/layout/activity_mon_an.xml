@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activityuser.MonAnActivity">
+
+    <ImageView
+        android:id="@+id/imgvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+    <ImageView
+        android:id="@+id/imgbackma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"></ImageView>
+    <EditText
+        android:id="@+id/edtSearchma"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/search1"
+        android:hint="Loại món ăn ..."
+        android:padding="10dp"
+
+        android:textAlignment="viewStart"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btnsearchma"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search"></Button>
+    <Button
+        android:id="@+id/btnMic"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/micro"></Button>
+
+    <TextView
+        android:id="@+id/tvLoaiMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:text="BÚN"
+        android:fontFamily="@font/roboto"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvLoaiMA">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

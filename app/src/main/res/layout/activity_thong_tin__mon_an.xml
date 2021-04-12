@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activityuser.ThongTin_MonAnActivity">
+
+    <ImageView
+        android:id="@+id/imgvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgbacktt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"></ImageView>
+
+    <ImageView
+        android:id="@+id/imagefoodtt"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/imgbacktt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/food"></ImageView>
+
+    <TextView
+        android:id="@+id/tvTenMAtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagefoodtt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="BÚN CHẢ"
+        android:textSize="25dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/imgSLtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTenMAtt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Số Lượng:"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="10dp"></TextView>
+
+    <ImageView
+        android:id="@+id/imggiamtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSLtt"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/giam"></ImageView>
+    <ImageView
+        android:id="@+id/imggiuatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSLtt"
+        android:layout_toRightOf="@id/imggiamtt"
+       android:background="@drawable/giua">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvSLtt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imgSLtt"
+        android:layout_alignBottom="@+id/imggiuatt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/imggiamtt"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000"
+        android:textSize="20dp"></TextView>
+    <ImageView
+        android:id="@+id/imgtangtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSLtt"
+        android:layout_toRightOf="@id/imggiuatt"
+        android:src="@drawable/tang"></ImageView>
+    <TextView
+        android:id="@+id/tvGiatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSLtt"
+        android:text="1.000.000 VNĐ"
+        android:textSize="25dp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnAddCart"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGiatt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btnaddcart"></Button>
+</RelativeLayout>
